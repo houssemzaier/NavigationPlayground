@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class InfoFragment : Fragment() {
+class InfoFragment : BaseSecuredFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

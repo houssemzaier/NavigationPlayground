@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_view_balance.*
 
-class ViewBalanceFragment : Fragment() {
+class ViewBalanceFragment : BaseSecuredFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_choose_recipient.*
 
-class ChooseRecipientFragment : Fragment() {
+class ChooseRecipientFragment : BaseSecuredFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
