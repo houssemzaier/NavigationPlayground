@@ -33,7 +33,7 @@ class ChooseRecipientFragmentTest {
 
         onView(withId(R.id.input_recipient)).perform(typeText("Jim"))
 
-        onView(withId(R.id.next_btn)).perform(click())
+        onView(withId(R.id.next_btn_choose_recipient)).perform(click())
 
         Mockito.verify(mockNavController).navigate(
             ChooseRecipientFragmentDirections.actionChooseRecipientFragmentToSpecifyAmountFragment("Jim")
