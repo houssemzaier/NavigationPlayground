@@ -32,7 +32,6 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
-
 }
 
 dependencies {
@@ -60,12 +59,11 @@ dependencies {
     // Robolectric environment
     testImplementation 'androidx.test:core:1.2.0'
     // Mockito framework
-    testImplementation 'org.mockito:mockito-core:2.28.2'
+    testImplementation 'org.mockito:mockito-core:3.2.0'
 
 //    instrumental
     // Mockito framework
-    androidTestImplementation 'org.mockito:mockito-android:2.28.2'
-    androidTestImplementation 'org.mockito:mockito-core:2.28.2'
+    androidTestImplementation 'org.mockito:mockito-android:3.2.0'
 
 //    // Core library
     androidTestImplementation 'androidx.test:core:1.2.0'
