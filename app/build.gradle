@@ -9,11 +9,11 @@ allOpen {
     annotation 'com.bravedroid.navigation.util.OpenClass'
 }
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.bravedroid.navigation"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -65,6 +65,7 @@ dependencies {
 //    instrumental
     // Mockito framework
     androidTestImplementation 'org.mockito:mockito-android:2.28.2'
+    androidTestImplementation 'org.mockito:mockito-core:2.28.2'
 
 //    // Core library
     androidTestImplementation 'androidx.test:core:1.2.0'

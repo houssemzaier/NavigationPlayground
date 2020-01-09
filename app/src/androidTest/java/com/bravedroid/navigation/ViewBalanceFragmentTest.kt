@@ -28,9 +28,9 @@ class ViewBalanceFragmentTest {
         val mockNavController = mock(NavController::class.java)
         `when`(mockNavController.navigateUp()).thenReturn(true)
         // Create a graphical FragmentScenario for the TitleScreen
-        val titleScenario = launchFragmentInContainer<ViewBalanceFragment>()
+        val viewBalanceFragmentScenario = launchFragmentInContainer<ViewBalanceFragment>(themeResId = R.style.AppTheme)
         // Set the NavController property on the fragment
-        titleScenario.onFragment { fragment ->
+        viewBalanceFragmentScenario.onFragment { fragment ->
             Navigation.setViewNavController(fragment.requireView(), mockNavController)
         }
         Thread.sleep(44474)
@@ -39,7 +39,8 @@ class ViewBalanceFragmentTest {
 //        // Verify that performing a click prompts the correct Navigation action
         onView(withId(R.id.info_btn_viewBalance)).perform(click())
 
-        verify(mockNavController).navigate(ViewBalanceFragmentDirections.actionGlobalInfoFragment())
+        verify(mockNavController).navigate(
+            ViewBalanceFragmentDirections.actionGlobalInfoFragment())
     }
 
     @Test
